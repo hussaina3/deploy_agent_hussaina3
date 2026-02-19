@@ -43,7 +43,7 @@ sigint() {
 	echo ""
 	echo "Script execution is interrupted. The progress will be archived"
 	if [ -d  "$parent_dir" ]; then
-		tar czf "attendance_tracker_${u_input}_archive.tar.gz" "$parent_dir"
+		tar czf "attendance_tracker_${u_input}_archive.tgz" "$parent_dir"
 		rm -rf "$parent_dir"
 	fi
 	echo "progress removed and archived"
